@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* { 
+  font-family: 'Montserrat', sans-serif; 
+}
+
+/*<-================================================================-> 
+                                HEADER
+  <-================================================================->*/
+
+.page-header {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  /* transform: translateX(-50%); */
+  z-index: 111111;
+}
+
+.tb-navbar-brand {
+
+}
+ 
+/*  ================================================================
+                                CONTENT
+    ================================================================ */
+
+.main .swiper {
+  height: 100vh;
+  /* background-color: blueviolet;  */
+}
+.main .swiper .swiperImg {
+  width: 100%;
+  /* height: auto; */
+  height: 120vh;
+  object-fit: cover;
+}
+
+.main .swiper .bg-image img:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.main .swiper .swiper-slide-caption {
+  top: 20%;
+  left: 40%;
+}
+ /* Section one */
+ .main .swiper .swiper-slide-caption .section-one h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.main .swiper .swiper-slide-caption .section-one p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.main .swiper .swiper-slide-caption .section-one h4 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+/* Section two  */
+.main .swiper .swiper-slide-caption .section-two p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  text-align: left;
+}
+.main .swiper .swiper-slide-caption .section-two h3{
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+
+.main .swiper .swiper-slide-caption .section-one, 
+.main .swiper .swiper-slide-caption .section-two {
+  text-align: left;
+}
+
+/*
+  Swiper Arrows Styling : 
+*/
+/* .main .arrow {
+  position: absolute;
+}
+.main .image-swiper-button-prev{
+  left: 0;
+  background: url(Imgs/Arrows/right.png) no-repeat; 
+}
+.main .image-swiper-button-next{
+  right: 0;
+  background: url(Imgs/Arrows/left.png) no-repeat; 
+} */
+
+.paginationHook { 
+  z-index: 111111111111111;   
+}
+
+.paginationHook .next{
+  z-index: 111111111111111;
+  position: absolute;  
+  bottom: 2%;
+  right: 1%;
+  cursor: pointer; 
+  
+}
+/*
+  Left Arrow aka prev: 
+*/
+.paginationHook .prev{
+  z-index: 111111111111111;
+  position: absolute;  
+  bottom: 2%;
+  left: 1%;
+  cursor: pointer; 
+  user-select: none;
+}  
+.paginationHook .prev::before{ 
+  content: url(Imgs/Arrows/yellow-left.svg);  
+  position: absolute; 
+  left: 100%; 
+  opacity: 0;
+  transition: left .2s ease-in-out, opacity .2s ease-in-out;  
+}
+.paginationHook .prev:hover::before{
+   left: 0%;
+   opacity: 1;
+}  
+/*
+  Right Arrow aka next
+*/ 
+.paginationHook .next{
+  z-index: 111111111111111;
+  position: absolute;  
+  bottom: 2%;
+  right: 1%;
+  cursor: pointer; 
+  user-select: none;
+}  
+.paginationHook .next::before{ 
+  content: url(Imgs/Arrows/yellow-right.svg);  
+  position: absolute; 
+  right: 100%;  
+  opacity: 0;
+  transition: right .2s ease-in-out, opacity .2s ease-in-out;  
+}
+.paginationHook .next:hover::before{
+  right: 0%;
+  opacity: 1; 
+} 
+/*
+  Mouse 
+*/
+
+.titleContainer{ 
+  position: absolute;  
+  z-index: 11111111111; 
+  left: 50%;
+  top: 115%;
+  transform: translate(-50%, -50%);
+} 
+.titleContainer .title {
+  /* color: #E9B42B; */
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700; 
+}
+.mouseContainer{
+  position: absolute; 
+  z-index: 11111111111; 
+  top: 110%;
+  left: 50%;
+}
+
+.arrow {
+	width: 0;
+	height: 40px;
+	border: 1px solid #E9B42B;
+	position: relative;
+	animation: scroll 1.5s infinite;
+	-webkit-animation: scroll 1.5s infinite; 
+} 
+.arrow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  width: 1px;
+  height: 10px; 
+  border-top: 10px solid #E9B42B;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+} 
+@keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+} 
+@-webkit-keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}  
+/* .main .swiper .swiper-button-next {  
+  background: url('Imgs/Arrows/left.png'); 
+  z-index: 111;
+}    */
+  
+/* .swiper-button-next,
+.swiper-button-prev { 
+  position: absolute; 
+  top: 90%;
+} */
+
+/* https://www.timo-ernst.net/blog/2020/09/12/arrows-in-react-swiper-js-how-to-customize-prev-next-button/ */
+.main .swiper [class^="swiper-button-"]{
+  top: initial;
+  bottom: 8%;
+}
+
+/*
+  ============= Leads Section  ============= 
+*/ 
+.leads {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  z-index: 1111;
+  background-color: #fff;
+  padding: 10px 0px;
+}
+.leads .title{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #232323;
+  text-align: center;
+}
+.leads .leads-form {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.leads .leads-form label {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+}
+.leads .leads-form input{
+  border-radius: 0; 
+}
+.leads button {
+  font-size: 24px !important;
+  line-height: 29px !important; 
+  border-radius: 0;
+  margin: auto;
+  background-color: #E9B42B;
+  border: 1px solid #E9B42B;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.leads button:hover{
+  background-color: #E9B42B;
+  border: 1px solid #E9B42B;
+}
+
+/*
+  ============= Welcome Section  ============= 
+*/ 
+.welcome {
+  padding-top: 80px;
+  padding-bottom: 80px;
+} 
+.welcome .section-one h2{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #232323;
+}
+.welcome .section-one h4{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #232323;
+  padding: 15px 0;
+}
+
+.welcome .section-one p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #9f9f9f;
+}
+
+.welcome .section-two {
+  /* font-size: 24px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #E9B42B; */
+}
+
+.welcome .section-two .marked-list{
+  list-style: none; 
+  margin-top: 60px;
+}
+.welcome .section-two .marked-list > li a {
+  text-decoration: none;
+  font-size: 24px; 
+  line-height: 52px;
+  font-weight: 700;
+  color: #ddc124;
+  transition: .3s all ease;
+  position: relative;
+}
+.welcome .section-two .marked-list > li a::before{ 
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: -2px;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: .3s all ease;
+  background: #efefef;
+}
+.welcome .section-two .marked-list > li a:hover,
+.welcome .section-two .marked-list > li a:hover::before {
+  content: "";
+  width: 100%;
+  color: #232323;
+}
+
+/*
+  ============= Offers Section  ============= 
+*/
+.offers {
+  margin-bottom: 120px;
+}
+.offers .section-one .title {
+  font-size: 60px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #232323;  
+}
+.offers .section-one .subTitle {
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #232323;
+  padding: 15px 0;
+}
+
+.offers .swiper-slide-caption {
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50% , -50%); 
+  /* background-color: red; */
+  width: 90%;
+}
+
+.offers .offer-specification {
+  /* background-color: red; */
+  display: flex;
+
+}
+.offers .offer-specification .offer-heading .offer-title{
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.offers .offer-specification .offer-heading .offer-subtitle{
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 300;
+}
+.offers .offer-specification .offer-list {
+  width: 500px;
+  /* background-color: rebeccapurple; */
+  margin-left: 70px;
+}
+.offers .offer-specification .offer-list ul {
+  list-style: none;
+}
+.offers .offer-specification .offer-list ul li{
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 5px 2px;
+}
+.offers .offer-specification .offer-list ul li i{
+  color: #E9B42B;
+  margin-right: 10px;
+}
+.offers .cta-btn {
+  text-decoration: none;
+  font-size: 24px; 
+  line-height: 52px;
+  font-weight: 700;
+  color: #ddc124;
+  transition: .3s all ease;
+  position: relative;
+}
+.offers .cta-btn::before{ 
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: -2px;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: .3s all ease;
+  background: #efefef;
+}
+.offers .cta-btn:hover,
+.offers .cta-btn:hover::before {
+  content: "";
+  width: 100%;
+  color: #232323;
+}
+
+.offers .swiperImg{
+  width: 100%;
+  /* height: auto; */
+  height: 120vh;
+  object-fit: cover;
+}
+
+
+/*
+ ==================== Footer =================
+*/
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .brand-name {
+ 
+}
+footer .col-logo {
+  display: flex;
+  color: #ffff;
+  font-size: 14px;
+}
+footer .col-logo .description {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+footer .contact-info a {
+  text-decoration: none;
+  color: #fff; 
+}
+footer .contact-info div{
+  margin-bottom: 11px;
+}
+
+footer .contact-info div span{
+  color: #fff !important;
+}
+footer .col-wrapper {
+  width: 300px !important; 
+}
+footer .contact-us {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+footer .contact-us li a {
+  color: #ffff;
+}
+footer .contact-us li i {
+  font-size: 20px;
+}
+
