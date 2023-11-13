@@ -23,6 +23,10 @@ const LeadsForm = () => {
                   <Form.Control type="email" placeholder="Email Address" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Country</Form.Label>
+                  <Form.Control type="country" placeholder="Your Country" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                   <Form.Label>Departure Day</Form.Label>
                   <Form.Control type="date"/>
               </Form.Group>

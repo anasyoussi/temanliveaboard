@@ -1,10 +1,10 @@
 import React from 'react' 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
-  
+import SwiperOfferBtns from './SwiperOfferBtns';
+
 import Raja from '../Imgs/Offers/second-1.jpg'
-import Komodo from '../Imgs/Offers/second-2.jpg'
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import Komodo from '../Imgs/Offers/second-2.jpg' 
 
 const Offers = () => {
   
@@ -20,7 +20,7 @@ const Offers = () => {
                     <Swiper   
                         modules={[ Navigation, Pagination, A11y ]} 
                         slidesPerView={1}
-                        navigation
+                        // navigation
                         parallax= {true}
                         loop= {true} 
                         style={{ height: '450px' }}
@@ -83,6 +83,10 @@ const Offers = () => {
                             </div>
                         </SwiperSlide>
                         
+
+                    <SwiperOfferBtns />
+                        
+
                     </Swiper>
                 </div>
             </div>
