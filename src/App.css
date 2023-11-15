@@ -6,7 +6,7 @@
 
 /*<-================================================================-> 
                                 HEADER
-  <-================================================================->*/
+<-================================================================->*/
 
 .page-header {
   position: absolute;
@@ -33,8 +33,7 @@
   /* height: auto; */
   height: 120vh;
   object-fit: cover;
-}
-
+} 
 .main .swiper .bg-image img:after {
   content: "";
   display: block;
@@ -46,11 +45,10 @@
   background: black;
   opacity: 0.8;
   z-index: 1;
-}
-
+} 
 .main .swiper .swiper-slide-caption {
   top: 20%;
-  left: 40%;
+  left: 43%;
 }
  /* Section one */
  .main .swiper .swiper-slide-caption .section-one h2 {
@@ -85,6 +83,10 @@
 .main .swiper .swiper-slide-caption .section-one, 
 .main .swiper .swiper-slide-caption .section-two {
   text-align: left;
+}
+
+.main .gold span{
+  color: #E9B42B;
 }
 
 /*
@@ -166,7 +168,7 @@
   position: absolute;  
   z-index: 11111111111; 
   left: 50%;
-  top: 115%;
+  top: 96%;
   transform: translate(-50%, -50%);
 } 
 .titleContainer .title {
@@ -179,7 +181,7 @@
 .mouseContainer{
   position: absolute; 
   z-index: 11111111111; 
-  top: 110%;
+  top: 92%;
   left: 50%;
 }
 
@@ -252,6 +254,7 @@
   z-index: 1111;
   background-color: #fff;
   padding: 10px 0px;
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.2);
 }
 .leads .title{
   font-size: 24px;
@@ -267,7 +270,7 @@
 .leads .leads-form label {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 500;
 }
 .leads .leads-form input{
   border-radius: 0; 
@@ -288,11 +291,144 @@
   border: 1px solid #E9B42B;
 }
 
+@media (max-width: 1199px) { 
+  /* Main Section */
+  section.main .section-one{
+    /* background-color: rebeccapurple; */
+    width: 500px;
+    text-align: center; 
+    margin-left: -111px;
+    margin-top: -100px;
+  }
+  section.main .section-two{
+    display: none;
+  }
+  section.main{
+    height: 60vh !important;
+  }
+  section.main .paginationHook .next, 
+  section.main .paginationHook .prev {
+    bottom: 57% !important;
+  }
+
+  section.main .titleContainer{
+    top: 54%;
+  } 
+  section.main .mouseContainer{
+    top: 50%;
+  }
+  /* End Main Section */
+ 
+
+  /* Leads Section */
+  section.leads {
+    /* background-color: rebeccapurple; */
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+  }  
+  /* End Leads Section */
+
+  section.welcome {
+    padding-top: 70px;
+  }
+
+
+  /* Offers Section */
+  section.offers .section-one .title {
+    font-size: 41px;
+    line-height: 34px;
+  }
+  section.offers .section-one .subTitle {
+    font-size: 18px;
+    line-height: 34px;
+  } 
+  section.offers .swiper-slide-caption .offer-specification .offer-list{
+    display: none;
+  }
+  section.offers .offer-specification{
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+@media(max-width:991px) {
+  section.offers{
+    /* background-color: rebeccapurple; */
+  }
+  section.offers .SwiperOfferBtns {
+
+  }
+  section.offers .SwiperOfferBtns .next, 
+  section.offers .SwiperOfferBtns .prev{
+    bottom: 20%;
+  }
+}
+
+@media(max-width: 767px){
+  section.offers{
+    /* background-color: red; */
+  }
+  section.offers .SwiperOfferBtns {
+
+  }
+  section.offers .SwiperOfferBtns .next, 
+  section.offers .SwiperOfferBtns .prev{
+    bottom: 40%;
+  }
+  section.offers .offer-specification{
+    margin-top: -150px; 
+  }
+}
+
+@media(max-width: 767px){
+  section.offers{
+    /* background-color: red; */
+  }
+  section.offers .SwiperOfferBtns {
+
+  }
+  section.offers .SwiperOfferBtns .next, 
+  section.offers .SwiperOfferBtns .prev{
+    bottom: 40%;
+  }
+  section.offers .offer-specification{
+    margin-top: -150px; 
+  }
+}
+
+@media(max-width: 490px) {
+  section.offers .offer-specification .offer-heading .offer-title{
+    margin-bottom: 0px;
+  }
+  section.offers .offer-specification .offer-heading .offer-subtitle{
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  section.offers .SwiperOfferBtns .next, 
+  section.offers .SwiperOfferBtns .prev{
+    bottom: 50%;
+  }
+  section.offers .offer-specification{
+    margin-top: -150px; 
+  }
+} 
+
+@media (min-width: 992px){
+  section.offers{
+    margin-bottom: 50px;
+  }
+}
+
+ 
+
 /*
   ============= Welcome Section  ============= 
 */ 
 .welcome {
-  padding-top: 80px;
+  padding-top: 150px;
   padding-bottom: 80px;
 } 
 .welcome .section-one h2{
@@ -358,7 +494,7 @@
   ============= Offers Section  ============= 
 */
 .offers {
-  margin-bottom: 120px;
+  margin-bottom: 0px;
 }
 .offers .section-one .title {
   font-size: 60px;
@@ -379,7 +515,7 @@
   top: 50%;
   left: 50%; 
   transform: translate(-50% , -50%); 
-  /* background-color: red; */
+  /* background-color: red !important; */
   width: 90%;
 }
 

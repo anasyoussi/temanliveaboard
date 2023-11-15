@@ -4,7 +4,7 @@ import { Navigation, Pagination, A11y } from 'swiper/modules';
 import SwiperOfferBtns from './SwiperOfferBtns';
 
 import Raja from '../Imgs/Offers/second-1.jpg'
-import Komodo from '../Imgs/Offers/second-2.jpg' 
+import Komodo from '../Imgs/Offers/second-3.jpg' 
 
 const Offers = () => {
   
@@ -27,7 +27,7 @@ const Offers = () => {
                     >  
                         <SwiperSlide className='slide-1' >  
                             <div className="bg-image position-relative">     
-                            <img className='swiperImg' src={Raja} alt="raja ampat destination temanboat" style={{ filter: 'brightness(30%)' }} />  
+                            <img className='swiperImg' src={Raja} alt="raja ampat destination temanboat" style={{ filter: 'brightness(67%)' }} />  
                             </div>   
                             <div className="swiper-slide-caption position-absolute text-white">
                                 <div class="container">
@@ -56,7 +56,7 @@ const Offers = () => {
 
                         <SwiperSlide className='slide-2' >  
                             <div className="bg-image position-relative">     
-                            <img className='swiperImg' src={Komodo} alt="raja ampat destination temanboat" style={{ filter: 'brightness(30%)' }} />  
+                            <img className='swiperImg' src={Komodo} alt="raja ampat destination temanboat" style={{ filter: 'brightness(67%)' }} />  
                             </div>   
                             <div className="swiper-slide-caption position-absolute text-white">
                                 <div class="container">
