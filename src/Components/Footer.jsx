@@ -1,7 +1,9 @@
 import React from 'react'
 import LogoTemanboat from '../assets/logo-temanboat.png'; 
+ 
 
-const Footer = () => {
+const Footer = () => { 
+
   return (
     <footer style={{ backgroundColor: "#060E19" }}>
         <div className="container">
@@ -20,7 +22,7 @@ const Footer = () => {
                 </div>
                 <div className="col-md-4">
                     <div className="contact-info"> 
-                        <div><span>E -mail:</span>   <a href="mailto:#">info@temanliveaboard.com</a></div>
+                        <div><span>E-mail:</span>  <a href="mailto:#">info@temanliveaboard.com</a></div>
                         <div><span>Phone:</span>   <a href="https://wa.me/6282145663903">(+62)<span>821-4566-3903</span></a></div>
                     </div>
                 </div>
@@ -39,7 +41,7 @@ const Footer = () => {
                             <a href=''><i className="fa-brands fa-youtube"></i></a>
                         </li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </div>
     </footer>

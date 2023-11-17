@@ -34,13 +34,10 @@ const Welcome = () => {
                       <div>&#8212; Raja Ampat</div>
                     </Accordion.Header>
                     <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        All cruises include airport transfers, non-alcoholic drinks, three daily meals with snacks, an 
+                        English and/or French-speaking Cruise Director, snorkeling gear, towels, bed sheets, water 
+                        sports, and beach activities. Diving cruises feature a maximum of three guided dives daily, 
+                        with English-speaking local dive guides, full 12L dive tanks, weight belts, and weights
                     </Accordion.Body>
                 </Accordion.Item>
                  
@@ -49,13 +46,10 @@ const Welcome = () => {
                       <div>&#8212; Komodo National Park</div>
                     </Accordion.Header>
                     <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        All cruises include airport transfers, non-alcoholic drinks, three daily meals with snacks, an 
+                        English and/or French-speaking Cruise Director, snorkeling equipment, towels, bed sheets, 
+                        water sports, and beach activities. Diving cruises feature a maximum of three daily guided 
+                        dives with English-speaking local dive guides, full 12L dive tanks, weight belts, and weights
                     </Accordion.Body>
                 </Accordion.Item>
                  
@@ -64,13 +58,11 @@ const Welcome = () => {
                       <div>&#8212; Banda Sea</div>
                     </Accordion.Header>
                     <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        All cruises provide airport transfers, non-alcoholic drinks, three daily meals with snacks, an 
+                        English and/or French-speaking Cruise Director, snorkeling equipment, towels, bed sheets, 
+                        water sports, and beach activities. Diving cruises offer a maximum of three daily guided dives 
+                        with English-speaking local dive guides, accompanied by full 12L dive tanks, weight belts, and 
+                        weights 
                     </Accordion.Body>
                 </Accordion.Item>
                  
@@ -79,13 +71,9 @@ const Welcome = () => {
                       <div>&#8212; Triton Bay</div>
                     </Accordion.Header>
                     <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        Triton Bay is located in the most Southern part of West Papua, which truly makes you feel you 
+                        are away from civilization. There are plenty of smaller islands dotted around with some 
+                        fantastic hidden treasures. You will discover impressive landscapes and vertiginous cliffs
                     </Accordion.Body>
                 </Accordion.Item>
                  
@@ -94,13 +82,12 @@ const Welcome = () => {
                       <div>&#8212; Sulawesi</div>
                     </Accordion.Header>
                     <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        Dive into Sulawesi, situated in the heart of the Coral Triangle, the world's most biodiverse 
+                        marine ecosystem. Experience pristine and untouched dive sites with the chance to witness a 
+                        variety of marine life and impressive coral reefs. All cruises include airport transfers, nonalcoholic drinks, three daily meals with snacks, an English/French-speaking Cruise Director, 
+                        snorkeling gear, towels, bed sheets, water sports equipment, and beach activities. Diving 
+                        cruises feature a maximum of three guided dives per day with English-speaking local dive 
+                        guides and full dive equipment
                     </Accordion.Body>
                 </Accordion.Item>
                  
@@ -109,13 +96,16 @@ const Welcome = () => {
                       <div>&#8212; Halmahera</div>
                     </Accordion.Header>
                     <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                        Halmahera Island Destination beckons diving enthusiasts to a true paradise, boasting 
+                        world-class spots like the underwater volcano Batu Angus, the exotic species-rich 
+                        Weda Bay, and the captivating islands of Bacan and Morotai. From historic 
+                        shipwrecks to encounters with manta rays and sea turtles, divers can explore these 
+                        treasures against the backdrop of Halmahera's lush rainforests and pristine beaches. 
+                        All cruises include airport transfers, non-alcoholic drinks, three daily meals with 
+                        snacks, an English/French-speaking Cruise Director, snorkeling gear, towels, bed 
+                        sheets, water sports equipment, and beach activities. Diving cruises offer a maximum 
+                        of three guided dives per day, led by English-speaking local dive guides, and include 
+                        full 12L dive tanks, weight belts, and weights
                     </Accordion.Body>
                 </Accordion.Item>
                  

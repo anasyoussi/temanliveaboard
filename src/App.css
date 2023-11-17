@@ -181,28 +181,28 @@
   Mouse 
 */
 
-.titleContainer{ 
+.main .titleContainer{ 
   position: absolute;  
   z-index: 11111111111; 
   left: 50%;
   top: 96%;
   transform: translate(-50%, -50%);
 } 
-.titleContainer .title {
+.main .titleContainer .title {
   /* color: #E9B42B; */
   color: #fff;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700; 
 }
-.mouseContainer{
+.main .mouseContainer{
   position: absolute; 
   z-index: 11111111111; 
   top: 92%;
   left: 50%;
 }
 
-.mouseContainer .arrow {
+.main .mouseContainer .arrow {
 	width: 0;
 	height: 40px;
 	border: 1px solid #E9B42B;
@@ -210,7 +210,7 @@
 	animation: scroll 1.5s infinite;
 	-webkit-animation: scroll 1.5s infinite; 
 } 
-.mouseContainer .arrow::after {
+.main .mouseContainer .arrow::after {
   content: '';
   display: block;
   position: absolute;
