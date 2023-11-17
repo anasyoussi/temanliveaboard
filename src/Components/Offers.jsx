@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 import SwiperOfferBtns from './SwiperOfferBtns';
 
-import Raja from '../Imgs/Offers/second-1.jpg'
-import Komodo from '../Imgs/Offers/second-3.jpg' 
+import Raja from '../assets/second-1.jpg'
+import Komodo from '../assets/second-3.jpg' 
 
 const Offers = () => {
   

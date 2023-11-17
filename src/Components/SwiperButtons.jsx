@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSwiper } from 'swiper/react'
-import Prev from '../Imgs/Arrows/left.png'; 
-import Next from '../Imgs/Arrows/right.png';  
+import Prev from '../assets/left.png'; 
+import Next from '../assets/right.png';  
 
 
 const SwiperButtons = () => {
