@@ -22,8 +22,7 @@ const Offers = () => {
                         slidesPerView={1}
                         // navigation
                         parallax= {true}
-                        loop= {true} 
-                        style={{ height: '450px' }}
+                        loop= {true}  
                     >  
                         <SwiperSlide className='slide-1' >  
                             <div className="bg-image position-relative">     
@@ -36,7 +35,7 @@ const Offers = () => {
                                             <div className="offer-heading">
                                                 <h2 className="offer-title">Cruising Komodo</h2>
                                                 <h4 className="offer-subtitle">Experience&nbsp;the&nbsp;friendliest&nbsp;cruises&nbsp;in&nbsp;indonesia</h4> 
-                                                <a href='#' className='cta-btn'>&#8212; Discover More</a> 
+                                                <a href='#leads' className='cta-btn'>&#8212; Discover More</a>
                                             </div>
                                             <div className="offer-list">
                                                 <ul>
@@ -65,7 +64,7 @@ const Offers = () => {
                                             <div className="offer-heading">
                                                 <h2 className="offer-title">The Ring Of Fire</h2>
                                                 <div className="offer-subtitle">Discover the most welcoming cruise journeys in Indonesia</div>
-                                                <a href='#' className='cta-btn'>&#8212; Discover More</a> 
+                                                <a href='#leads' className='cta-btn'>&#8212; Discover More</a> 
                                             </div>
                                             <div className="offer-list">
                                                 <ul>

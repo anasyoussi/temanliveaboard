@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import SwiperCore from 'swiper';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import SwiperButtons from './SwiperButtons';
 // Images : 
 import Raja from '../assets/raja-ampat-destination-temanboat.jpg';
@@ -19,6 +20,9 @@ import Halmahera from '../assets/halmahera-destination-temanboat.jpg';
 
 const Main = () => {
 
+    SwiperCore.use([Autoplay]);
+
+
     const NavigationOptions = {
         nextEl: ".image-swiper-button-next",
         prevEl: ".image-swiper-button-prev", 
@@ -31,12 +35,17 @@ const Main = () => {
           modules={[Navigation, Pagination, A11y]} 
           slidesPerView={1}
           loop= {true}
-          // parallax= {true}
+          parallax= {true}
+          effect= "slide"
           // navigation
           // pagination={{ clickable: true }} 
           // onSwiper={(swiper) => console.log(swiper)}
           // onSlideChange={() => console.log('slide change')}
           // style={{ height: '120vh' }}
+          autoplay={{
+            "delay": 4000,
+            "disableOnInteraction": false
+          }}
         >
           <SwiperSlide className='slide-1' >  
             <div className="bg-image position-relative">     
@@ -63,7 +72,7 @@ const Main = () => {
                                 options for diving adventures, ranging from 5 to 13 nights. 
                             </p>
                             <h4 class="text-bold">from <s>600</s> EUR/night/pax</h4>
-                            <h3 class="text-bold">Now <span style={{ textDecoration:"gold wavy underline", textUnderlineOffset: "6px"  }}>450 EUR/night/pax</span> </h3>
+                            <h3 class="text-bold">Now 450 EUR/night/pax</h3>
                         </div>
                     </div>
                 </div> 
@@ -93,7 +102,7 @@ const Main = () => {
                                 Dive into Komodo's thrills with 3 to 10 night options or extend the advencture to Komodo and Moyo for 8 to 9 nights.
                             </p>
                             <h4 class="text-bold">from <s>545</s> EUR/night/pax</h4>
-                            <h3 class="text-bold">Now <span style={{ textDecoration:"gold wavy underline", textUnderlineOffset: "6px"  }}>400 EUR/night/pax</span> </h3>
+                            <h3 class="text-bold">Now 400 EUR/night/pax</h3>
                         </div>
                     </div>
                 </div> 
@@ -123,7 +132,7 @@ const Main = () => {
                                 Dive into Komod's thrills with 3 to 10-night options or extend the adventure to Komodo and Moyo for 8 to 9 nights.
                             </p>
                             <h4 class="text-bold">from <s>545</s> EUR/night/pax</h4>
-                            <h3 class="text-bold">Now <span style={{ textDecoration:"gold wavy underline", textUnderlineOffset: "6px"  }}>400 EUR/night/pax</span> </h3>
+                            <h3 class="text-bold">Now 400 EUR/night/pax</h3>
                         </div>
                     </div>
                 </div> 
@@ -155,7 +164,7 @@ const Main = () => {
                                 with full equipment
                             </p>
                             <h4 class="text-bold">from <s>550</s> EUR/night/pax</h4>
-                            <h3 class="text-bold">Now <span style={{ textDecoration:"gold wavy underline", textUnderlineOffset: "6px"  }}>450 EUR/night/pax</span> </h3>
+                            <h3 class="text-bold">Now 450 EUR/night/pax</h3>
                         </div>
                     </div>
                 </div> 
@@ -186,7 +195,7 @@ const Main = () => {
                                 Driving cruises feature up to three guided dives daily with full equipment. 
                             </p>
                             <h4 class="text-bold">from <s>620</s> EUR/night/pax</h4>
-                            <h3 class="text-bold">Now <span style={{ textDecoration:"gold wavy underline", textUnderlineOffset: "6px"  }}>450 EUR/night/pax</span> </h3>
+                            <h3 class="text-bold">Now 450 EUR/night/pax</h3>
                         </div>
                     </div>
                 </div> 
@@ -217,7 +226,7 @@ const Main = () => {
                                 snorkeling gear, and water sports, Diving cruises offer up to three dives with full equipment.
                             </p>
                             <h4 class="text-bold">from <s>620</s> EUR/night/pax</h4>
-                            <h3 class="text-bold">Now <span style={{ textDecoration:"gold wavy underline", textUnderlineOffset: "6px"  }}>450 EUR/night/pax</span> </h3>
+                            <h3 class="text-bold">Now 450 EUR/night/pax</h3>
                         </div>
                     </div>
                 </div> 
@@ -236,7 +245,7 @@ const Main = () => {
          </div>
          <div className="mouseContainer"> 
             {/* <div class="mouse"></div> */} 
-            <div className="arrow"></div>
+            <div className="mouvingArrow"></div>
           </div>
 
     </section>

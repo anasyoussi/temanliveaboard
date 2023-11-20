@@ -179,11 +179,10 @@
 } 
 /*
   Mouse 
-*/
-
+*/ 
 .main .titleContainer{ 
   position: absolute;  
-  z-index: 11111111111; 
+  z-index: 11111; 
   left: 50%;
   top: 96%;
   transform: translate(-50%, -50%);
@@ -197,12 +196,12 @@
 }
 .main .mouseContainer{
   position: absolute; 
-  z-index: 11111111111; 
+  z-index: 11111; 
   top: 92%;
   left: 50%;
 }
 
-.main .mouseContainer .arrow {
+.main .mouseContainer .mouvingArrow {
 	width: 0;
 	height: 40px;
 	border: 1px solid #E9B42B;
@@ -210,7 +209,7 @@
 	animation: scroll 1.5s infinite;
 	-webkit-animation: scroll 1.5s infinite; 
 } 
-.main .mouseContainer .arrow::after {
+.main .mouseContainer .mouvingArrow::after {
   content: '';
   display: block;
   position: absolute;
@@ -264,14 +263,45 @@
 /*
   ============= Leads Section  ============= 
 */ 
+.swal2-container {
+  z-index: 20000 !important; 
+}
+.swal2-popup {
+  top: -110px !important;
+}
+
+/* React input */
+.react-tel-input .form-control{
+  width: 100% !important;
+  /* border: 1px solid #9f9f9f !important; */
+} 
+/* ./React input */
+
+/* Input Countries Styles */
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+  padding-bottom: 0;
+}
+.leads-form select {
+  border-radius: 0 !important;
+}
+/* Input Countries Styles*/
+
+/* dateTimepicker */
+.react-datepicker-wrapper{
+  width: 100%;
+}
+/* datetimepicker*/
+
+
 .leads {
+  width: 400px;
   position: absolute;
   top: 11%;
   left: 8%;
   z-index: 1111;
   background-color: #fff;
   padding: 10px 0px;
-  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.2); 
 }
 .leads .title{
   font-size: 24px;
@@ -285,14 +315,14 @@
   padding-left: 20px;
 }
 .leads .leads-form label {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   font-weight: 500;
 }
 .leads .leads-form input{
   border-radius: 0; 
 }
-.leads button {
+.leads button.cta {
   font-size: 24px !important;
   line-height: 29px !important; 
   border-radius: 0;
@@ -301,9 +331,9 @@
   border: 1px solid #E9B42B;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
-.leads button:hover{
+.leads button.cta:hover{
   background-color: #E9B42B;
   border: 1px solid #E9B42B;
 }
@@ -340,6 +370,7 @@
   /* Leads Section */
   section.leads {
     /* background-color: rebeccapurple; */
+    width: auto;
     position: relative;
     top: 0;
     left: 0;
@@ -393,17 +424,17 @@
   }
   section.offers .SwiperOfferBtns .next, 
   section.offers .SwiperOfferBtns .prev{
-    bottom: 40%;
+    bottom: 30%;
   }
   section.offers .offer-specification{
-    margin-top: -150px; 
+    margin-top: -25px;  
   }
 }
 
-@media(max-width: 767px){
+/* @media(max-width: 767px){
   section.offers{
     /* background-color: red; */
-  }
+  /* }
   section.offers .SwiperOfferBtns {
 
   }
@@ -413,8 +444,8 @@
   }
   section.offers .offer-specification{
     margin-top: -150px; 
-  }
-}
+  }  
+} */
 
 @media(max-width: 490px) {
   section.offers .offer-specification .offer-heading .offer-title{
@@ -427,10 +458,10 @@
   section.offers .SwiperOfferBtns .next, 
   section.offers .SwiperOfferBtns .prev{
     /* bottom: 50%; */
-    bottom: 60%; 
+    bottom: 15%; 
   }
   section.offers .offer-specification{
-    margin-top: -150px; 
+    margin-top: 50px; 
   }
 } 
 
@@ -701,6 +732,123 @@
   opacity: 1; 
 } 
 
+/*
+  Testimonials : 
+*/
+
+section.testimonials {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  /* background-color: #dad9d9 !important; */
+}
+
+section.testimonials .section-one .title{
+  color: #232323;
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 34px;
+}
+section.testimonials .section-one .subTitle {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #232323;
+  padding: 15px 0;
+}
+
+.box{ 
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border:1px solid #ECECEC;
+  /* box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02); */
+}
+ 
+.shadow-effect {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  border:1px solid #ECECEC;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+#customers-testimonials .shadow-effect p {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-weight: 300;
+}
+.testimonial-name {
+  margin: -17px auto 0;
+  display: table;
+  width: auto;
+  background: #ddc124;
+  padding: 9px 35px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom:80px;
+  opacity: .2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d;
+  max-width: 90px;
+  margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #3190E7;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+display: inline-block;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+  background: #3190E7;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  ==================== Footer =================
@@ -708,6 +856,8 @@
 footer {
   padding-top: 30px;
   padding-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 footer .brand-name {
  
@@ -748,3 +898,37 @@ footer .contact-us li i {
   font-size: 20px;
 }
 
+ 
+
+
+.footer {
+  background: #152f4f;
+  color: white;
+}
+.footer .links ul {
+  list-style-type: none;
+}
+.footer .links li a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .links li a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+.footer .about-company i {
+  font-size: 25px;
+}
+.footer .about-company a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .about-company a:hover {
+  color: #4180cb;
+}
+.footer .location i {
+  font-size: 18px;
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
